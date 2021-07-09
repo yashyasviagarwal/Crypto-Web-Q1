@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Techno Main Salt Lake</title>
+	<link href="style2.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <a class="navbar-brand" href="#"><img src="img/logo6.jpg"></a>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+	<li style="position: absolute; right : 10px;"><a onclick="logout()" >Logout</a></li>
+</ul>
+</div>
+</nav>
+
+    <div class="container">
+        <img src="img/background.png" alt="Snow" style="width:100%;">
+        <div class="centered">
+            <h1>Techno Main Salt Lake</h1>
+            <h3>CALL OUR ADMISSION COUNSELLOR
+                +91-33-2357-5683/84/86</h3>
+        </div>
+      </div>
+
+<div class="container-fluid padding">
+	<div class="row" style="text-align: center;">
+		<div class="col-12">
+			<h1 class="display-4">About Us</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">Established in the year 2001, Techno Main Salt Lake stands tall as the best and most acclaimed academic institute in Asia. A college with a difference, this institute is presently running variety of UG programs and a variety of PG courses as well. Situated in Salt Lake, Kolkata- the IT Hub of West Techno India is a premier abode for aspirants across the nation; top rank holders in prestigious competitive examinations such as WBJEE and JEE(Mains) have trusted this institute over the years. This college strives for excellence by virtue of the high quality education imparted to the students, state-of-the-art research infrastructure, modern technology enabled teaching-learning tools, vigorous industry driven curricula, exceptional laboratory facilities and other ample amenities. Be a part of this elite group for it's a place where passion and creativity join hands ascertaining a glorious future ahead!</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid padding"  style="text-align: center;">
+	<div class="row padding">
+        <div class="col-12">
+			<h1 class="display-4">Prestigious Identification</h1>
+        </div>
+        <div class="footer">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="img/aicte.png" alt="">
+            <h3 class="display-4">AICTE</h1>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="img/ariaa.jpg" alt="">
+            <h3 class="display-4">ARIAA</h1>
+		</div>
+		<div class="col-xs-12 col-md-4">
+            <img src="img/sih.png" alt="">
+            <h3 class="display-4">SIH</h1>
+        </div>
+    </div>
+    </div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<div class="container-fluid padding"style="text-align:center">
+	<div class="row padding">
+            <h2>MISSION</h2>
+            <!-- <div style="text-align:center"> -->
+            <div class="footer">
+            <div>
+            <ul>
+			<li><p>To identify individual potential, capabilities and skills to achieve confidence and competence.</p>
+            </li>
+            <li><p>To practice innovative and modern methods of pedagogy encouraging holistic education and research.
+            </p></li>
+            <li><p>To enhance employability skills through collaborative ventures with the industry.
+            </p></li>
+            <li><p>To build leaders and entrepreneurs with integrity and ethics fostering growth and sustainability.
+            </p></li>
+        </ul>
+    </div>
+
+		<div>
+			<img src="img/bootstrap2.png" >
+        </div>
+    </div>
+	</div>
+	<hr class="my-4">
+</div>
+<footer>
+	<div class="container-fluid padding" style="text-align:center">
+		<div class="row text-center footer">
+			<div class="col-md-4 pt-0">
+				<div class="footer-image">
+				<img src="img/logo6.jpg"></div>
+				<hr class="light">
+				<p>033-23575683 / 84 / 86</p>
+				<p>info@ticollege.ac.in / principal@ticollege.ac.in</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our hours</h5>
+				<hr class="light">
+				<p>Monday: 9am - 5pm</p>
+				<p>Saturday: 10am - 4pm</p>
+				<p>Sunday: Closed</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Service Area</h5>
+				<hr class="light">
+				<p>EM-4/1, Sector-V, Salt Lake, Kolkata-700091, WB</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+<script>
+	document.addEventListener('contextmenu', event => event.preventDefault());
+	function getCookie(name) {
+		const value = `; ${document.cookie}`;
+		const parts = value.split(`; ${name}=`);
+		if (parts.length === 2) return parts.pop().split(';').shift();
+	}
+	setInterval(function(){
+		var cookie = getCookie('loggedIn');
+		if(cookie == null){
+			window.location.href='index.html';
+		}
+	},5000);
+	function logout(){
+		document.cookie = "loggedIn" +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+		window.location.href='index.html';
+	}
+</script>
+</html>
